@@ -4,7 +4,7 @@ stages {
 
 stage('Deploy-Dev') {
 steps {
-echo 'start using jenkins"
+echo 'start using jenkins'
 }
 }
 stage ('Deploy-QA') {
