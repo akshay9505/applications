@@ -1,0 +1,22 @@
+pipeline {
+agent any
+stages {
+
+stage('Deploy-Dev') {
+steps {
+echo 'start using jenkins"
+}
+}
+stage ('Deploy-QA') {
+steps {
+echo 'QA'
+input 'Does the staginig environment look ok?'
+}
+}
+stage('Deploy-Production') {
+steps {
+echo 'production'
+}
+}
+}
+}
